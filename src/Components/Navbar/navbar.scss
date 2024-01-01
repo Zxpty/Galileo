@@ -1,0 +1,410 @@
+:root {
+    --primary-color: #f34506;
+    --secondary-color: #17293d;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.7s;
+    padding: 2rem 3rem;
+    z-index: 10;
+
+    .menu-logo,
+    nav,
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Logo Nav*/
+    .menu-logo {
+        gap: 1rem;
+        color: white;
+        line-height: 1.8rem;
+
+        .logo-title {
+            font-size: 34px;
+            font-weight: bold;
+        }
+
+        .logo-subtitle {
+            font-weight: bold;
+        }
+    }
+
+    /* links of Nav*/
+    .nav-links {
+        gap: 1rem;
+
+        a {
+            position: relative;
+        }
+
+        li a {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    // Nav Responsive
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgba(33, 49, 63, 0.95);
+        overflow: hidden;
+        transition: all 0.3s ease 0;
+
+        .overlay-content {
+            display: flex;
+            height: 100%;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        a {
+            padding: 15px;
+            font-size: 36px;
+            display: block;
+            transition: all 0.3s ease 0;
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--primary-color);
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 65px;
+        }
+    }
+}
+
+.menu {
+    display: none;
+}
+
+.background-scroll {
+    background-color: #17293d;
+    padding: 0.7rem;
+    transition: all 0.2s ease-in-out 0;
+}
+
+/* Media Query Nav */
+@media screen and (max-width: 800px) {
+    header {
+        padding: 1rem 1rem;
+    }
+
+    .menu-logo > div {
+        display: none;
+    }
+
+    nav {
+        .nav-links {
+            display: none;
+        }
+    }
+
+    .menu {
+        display: inherit;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    header {
+        .overlay {
+            a {
+                font-size: 20px;
+            }
+
+            .close {
+                font-size: 40px;
+                top: 15px;
+                right: 35px;
+            }
+        }
+    }
+}
+
+/*End of media query Nav*/
+
+// section 1
+#hero {
+    background: url("/Images/Background/background1.png");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+
+    .hero {
+        div {
+            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+            color: white;
+            font-size: 38px;
+            font-weight: 500;
+            text-transform: capitalize;
+        }
+
+        div:nth-child(4) {
+            font-size: 28px;
+        }
+
+        button {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 0.5rem 4rem;
+            border-radius: 30px;
+            font-size: 20px;
+            color: white;
+            margin-top: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+// section 2
+#space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .space {
+        padding: 5rem 0;
+        font-size: 3rem;
+        font-weight: bold;
+
+        div:nth-child(1) {
+            color: var(--secondary-color);
+        }
+
+        div:nth-child(2) {
+            color: var(--primary-color);
+        }
+    }
+}
+
+// section 3
+
+#nosotros {
+    .nosotros {
+        display: flex;
+
+        .nosotros-text {
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 1rem;
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .nosotros-logo {
+            background-color: var(--secondary-color);
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 11rem 0;
+            line-height: 3rem;
+
+            .title {
+                color: white;
+                font-weight: bold;
+                font-size: 34px;
+                text-align: center;
+                text-transform: capitalize;
+            }
+
+            button {
+                background-color: var(--primary-color);
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 30px;
+                font-size: 20px;
+                color: white;
+                margin-top: 1rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.nosotros-text {
+    font-size: 34px;
+}
+
+@media (max-width: 768px) {
+    .nosotros-text {
+        font-size: medium;
+    }
+}
+
+// section 3 - cards
+
+.container-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-image: url(/Images/Background/background2.png);
+    background-size: cover;
+    /* Ajusta la imagen para cubrir todo el espacio sin repetirse */
+    background-repeat: no-repeat;
+    /* Evita la repetición de la imagen */
+    background-position: center center;
+
+    .card {
+        background-color: #f34506;
+        width: 284px;
+        height: 425px;
+        margin: 62px 55px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .card-image {
+        height: 350px;
+        margin-bottom: 15px;
+        background-size: cover;
+        border-radius: 20px;
+    }
+
+    .edu-1 {
+        background-image: url(/Images/Rectangle\ 25.png);
+    }
+
+    .edu-2 {
+        background-image: url(/Images/Rectangle\ 25.png);
+    }
+
+    .edu-3 {
+        background-image: url(/Images/Rectangle\ 25.png);
+    }
+
+    .edu-4 {
+        background-image: url(/Images/Rectangle\ 25.png);
+    }
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    filter: drop-shadow(0 15px 5px rgba(136, 73, 2, 0.125));
+    opacity: 0.9;
+}
+
+//section 4 - form
+
+#formulario {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 8rem;
+    margin: 1rem 0;
+
+    input {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+        border-radius: 30px;
+        border: 1px solid var(--secondary-color);
+    }
+}
+
+.form-button {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 0.7rem 7rem;
+    border-radius: 30px;
+    font-size: 20px;
+    color: white;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+// Footer
+
+#footer {
+    border: 1px solid green;
+    color: white;
+    background-image: url(/Images/Background/background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .footer {
+        padding: 5rem;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
+
+.footer-container {
+    .container-flex {
+        // border: solid 1px red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 4rem;
+        font-size: 26px;
+        text-transform: capitalize;
+        div {
+            width: 100%;
+        }
+        .title{
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: normal;
+            img {
+                width: 109px;
+                height: 109px;
+            }
+            .title {
+                font-size: 34px;
+                font-weight: bold;
+            }
+            .subtitle {
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-flex {
+        text-align: center;
+    }
+}
