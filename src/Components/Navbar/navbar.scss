@@ -4,7 +4,7 @@
 }
 
 header {
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -57,14 +57,16 @@ header {
     // Nav Responsive
     .overlay {
         height: 100%;
-        width: 0;
+        width: 100%;
         position: fixed;
         z-index: 1;
         left: 0;
         top: 0;
-        background-color: rgba(33, 49, 63, 0.95);
+        background-color: rgba(33, 49, 63, 0.973);
         overflow: hidden;
         transition: all 0.3s ease 0;
+        max-height: 100vh;
+        overflow-y: auto;
 
         .overlay-content {
             display: flex;
@@ -109,6 +111,7 @@ header {
 
 /* Media Query Nav */
 @media screen and (max-width: 800px) {
+    
     header {
         padding: 1rem 1rem;
     }
