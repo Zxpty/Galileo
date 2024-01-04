@@ -1,20 +1,11 @@
 import './navbar.css'
 import LogoGali from '../../assets/Images/logo-gali.png'
 import MenuResponsive from '../MenuResponsive'
-import { useEffect, useState } from 'react'
+import { useScrollPage } from '../../hooks/useScrollPage'
+
 
 function NavBar() {
-    const [isScrolled, setIsScrolled] = useState(false)
-    useEffect(() => {
-        const handleScroll = () => {
-            setIsScrolled(window.scrollY > 0)
-        }
-        window.addEventListener('scroll', handleScroll)
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll)
-        }
-    }, [])
+    const { isScrolled } = useScrollPage()
 
     const backClass = isScrolled ? 'background-scroll' : ''
     return (
