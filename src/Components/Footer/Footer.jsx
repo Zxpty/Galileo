@@ -1,4 +1,3 @@
-import React from 'react'
 import LogoGali from '../../assets/Images/logo-gali-2.png'
 import "../Navbar/navbar.css"
 import backFooter from '../../assets/Images/Background/background3.png'
@@ -6,21 +5,21 @@ function Footer() {
     return (
         <>
             <section id="footer" style={{backgroundImage: `url(${backFooter})`}}>
-                <div class="footer">
-                    <div class="footer-container">
-                        <div class="container-flex">
-                            <div class="logo">
+                <div className="footer">
+                    <div className="footer-container">
+                        <div className="container-flex">
+                            <div className="logo">
                                 <div><img src={LogoGali} alt="" /></div>
-                                <div class="subtitle">Institución Educativa Privada</div>
-                                <div class="title">Galileo Huacho</div>
+                                <div className="subtitle">Institución Educativa Privada</div>
+                                <div className="title">Galileo Huacho</div>
                             </div>
 
                         </div>
 
                     </div>
-                    <div class="footer-container">
-                        <div class="container-flex">
-                            <div class="title">Servicios</div>
+                    <div className="footer-container">
+                        <div className="container-flex">
+                            <div className="title">Servicios</div>
                             <div>Inicial</div>
                             <div>Primaria</div>
                             <div>Secundaria</div>
@@ -28,9 +27,9 @@ function Footer() {
                         </div>
 
                     </div>
-                    <div class="footer-container">
-                        <div class="container-flex">
-                            <div class="title">Más Links</div>
+                    <div className="footer-container">
+                        <div className="container-flex">
+                            <div className="title">Más Links</div>
                             <div>Historia</div>
                             <div>Galería</div>
                             <div>Aula Virtual</div>
@@ -39,9 +38,9 @@ function Footer() {
 
                         </div>
                     </div>
-                    <div class="footer-container">
-                        <div class="container-flex">
-                            <div class="title">Contacto</div>
+                    <div className="footer-container">
+                        <div className="container-flex">
+                            <div className="title">Contacto</div>
                             <div>Av. Grau - Huacho</div>
                             <div>981 392 701</div>
 

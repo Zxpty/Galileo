@@ -297,7 +297,6 @@ header .overlay .close {
 }
 
 #footer {
-  border: 1px solid green;
   color: white;
   background-image: url(/Images/Background/background3.png);
   background-size: cover;
