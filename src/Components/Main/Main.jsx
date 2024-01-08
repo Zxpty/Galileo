@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "../Navbar/navbar.css"
 import LogoGalileo from '../../assets/Images/logo-gali-2.png'
 import BackImage from '../../assets/Images/Background/background1.png'
