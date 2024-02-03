@@ -1,0 +1,36 @@
+.container-card {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    .card {
+        background-color: #f34506;
+        width: 284px;
+        height: 425px;
+        margin: 62px 55px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        h2 {
+            text-align: center;
+            color: white;
+        }
+    }
+
+    .card-image {
+        height: 350px;
+        margin-bottom: 15px;
+        background-size: cover;
+        border-radius: 20px;
+    }
+}
+.card:hover {
+    transform: scale(1.1);
+    border: 1px solid rgba(255, 255, 255, 0.255);
+    filter: drop-shadow(0 15px 5px rgba(136, 73, 2, 0.125));
+    opacity: 0.9;
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 :root {
   --primary-color: #f34506;
   --secondary-color: #17293d;
@@ -13,7 +12,7 @@ header {
   align-items: center;
   justify-content: space-between;
   transition: 0.7s;
-  padding: 2rem 3rem;
+  padding: 0.7rem;
   z-index: 10;
   /* Logo Nav*/
   /* links of Nav*/
@@ -151,124 +150,6 @@ header .overlay .close {
   cursor: pointer;
 }
 
-#space {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-}
-#space .space {
-  padding: 5rem 0;
-  font-size: 3rem;
-  font-weight: bold;
-}
-#space .space div:nth-child(1) {
-  color: var(--secondary-color);
-}
-#space .space div:nth-child(2) {
-  color: var(--primary-color);
-}
-
-#nosotros .nosotros {
-  display: flex;
-}
-#nosotros .nosotros .nosotros-text {
-  background-color: #f0f0f0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
-  font-weight: 500;
-  flex: 1;
-}
-#nosotros .nosotros .nosotros-logo {
-  background-color: var(--secondary-color);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 11rem 0;
-  line-height: 3rem;
-}
-#nosotros .nosotros .nosotros-logo .title {
-  color: white;
-  font-weight: bold;
-  font-size: 34px;
-  text-align: center;
-  text-transform: capitalize;
-}
-#nosotros .nosotros .nosotros-logo button {
-  background-color: var(--primary-color);
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 30px;
-  font-size: 20px;
-  color: white;
-  margin-top: 1rem;
-  cursor: pointer;
-}
-
-.nosotros-text {
-  font-size: 34px;
-}
-
-@media (max-width: 768px) {
-  .nosotros-text {
-    font-size: medium;
-  }
-}
-.container-card {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-image: url(/Images/Background/background2.png);
-  background-size: cover;
-  /* Ajusta la imagen para cubrir todo el espacio sin repetirse */
-  background-repeat: no-repeat;
-  /* Evita la repetición de la imagen */
-  background-position: center center;
-}
-.container-card .card {
-  background-color: #f34506;
-  width: 284px;
-  height: 425px;
-  margin: 62px 55px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.container-card .card h2 {
-  text-align: center;
-  color: white;
-}
-.container-card .card-image {
-  height: 350px;
-  margin-bottom: 15px;
-  background-size: cover;
-  border-radius: 20px;
-}
-.container-card .edu-1 {
-  background-image: url(/Images/Rectangle\ 25.png);
-}
-.container-card .edu-2 {
-  background-image: url(/Images/Rectangle\ 25.png);
-}
-.container-card .edu-3 {
-  background-image: url(/Images/Rectangle\ 25.png);
-}
-.container-card .edu-4 {
-  background-image: url(/Images/Rectangle\ 25.png);
-}
-
-.card:hover {
-  transform: scale(1.1);
-  border: 1px solid rgba(255, 255, 255, 0.255);
-  filter: drop-shadow(0 15px 5px rgba(136, 73, 2, 0.125));
-  opacity: 0.9;
-}
-
 #formulario {
   display: flex;
   gap: 30px;
@@ -294,58 +175,4 @@ header .overlay .close {
   color: white;
   margin-top: 1rem;
   cursor: pointer;
-}
-
-#footer {
-  color: white;
-  background-image: url(/Images/Background/background3.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-#footer .footer {
-  padding: 5rem;
-  display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.footer-container .container-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  line-height: 4rem;
-  font-size: 26px;
-  text-transform: capitalize;
-}
-.footer-container .container-flex div {
-  width: 100%;
-}
-.footer-container .container-flex .title {
-  font-size: 28px;
-  font-weight: bold;
-}
-.footer-container .container-flex .logo {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  line-height: normal;
-}
-.footer-container .container-flex .logo img {
-  width: 109px;
-  height: 109px;
-}
-.footer-container .container-flex .logo .title {
-  font-size: 34px;
-  font-weight: bold;
-}
-.footer-container .container-flex .logo .subtitle {
-  font-size: 17px;
-}
-
-@media screen and (max-width: 768px) {
-  .container-flex {
-    text-align: center;
-  }
 }/*# sourceMappingURL=navbar.css.map */

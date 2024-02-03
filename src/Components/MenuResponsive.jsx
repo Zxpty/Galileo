@@ -16,9 +16,9 @@ function MenuResponsive() {
                     &times;
                 </a>
                 <div className="overlay-content">
-                    <a href="">Nosotros</a>
-                    <a href="">Nivel Educativo</a>
-                    <a href="">Aula Virtual</a>
+                    <a href="/nosotros">Nosotros</a>
+                    <a href="/niveles-educativos">Nivel Educativo</a>
+                    <a href="/aula-virtual">Aula Virtual</a>
                 </div>
             </div>
         </>

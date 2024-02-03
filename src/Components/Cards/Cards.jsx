@@ -1,5 +1,5 @@
-import React from 'react';
-
+/* eslint-disable react/prop-types */
+import './Cards.css'
 function Cards( {cardClass, title, imageUrl} ) {
     return (
         <div className="card">

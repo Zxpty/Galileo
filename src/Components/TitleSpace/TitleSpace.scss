@@ -1,0 +1,21 @@
+#space {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+
+    .space {
+        padding: 5rem 0;
+        font-size: 3rem;
+        font-weight: bold;
+
+        div:nth-child(1) {
+            color: var(--secondary-color);
+        }
+
+        div:nth-child(2) {
+            color: var(--primary-color);
+        }
+    }
+}

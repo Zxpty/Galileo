@@ -1,0 +1,18 @@
+#space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+#space .space {
+  padding: 5rem 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+#space .space div:nth-child(1) {
+  color: var(--secondary-color);
+}
+#space .space div:nth-child(2) {
+  color: var(--primary-color);
+}/*# sourceMappingURL=TitleSpace.css.map */

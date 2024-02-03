@@ -1,5 +1,5 @@
 import LogoGali from '../../assets/Images/logo-gali-2.png'
-import "../Navbar/navbar.css"
+import './Footer.css'
 import backFooter from '../../assets/Images/Background/background3.png'
 function Footer() {
     return (

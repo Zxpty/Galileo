@@ -1,0 +1,57 @@
+// Footer
+
+#footer {
+    color: white;
+    background-image: url(/Images/Background/background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    .footer {
+        padding: 5rem;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+.footer-container {
+    .container-flex {
+        // border: solid 1px red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 4rem;
+        font-size: 26px;
+        text-transform: capitalize;
+        div {
+            width: 100%;
+        }
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .logo {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            line-height: normal;
+            img {
+                width: 109px;
+                height: 109px;
+            }
+            .title {
+                font-size: 34px;
+                font-weight: bold;
+            }
+            .subtitle {
+                font-size: 17px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .container-flex {
+        text-align: center;
+    }
+}

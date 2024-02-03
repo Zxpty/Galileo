@@ -1,0 +1,53 @@
+#footer {
+  color: white;
+  background-image: url(/Images/Background/background3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#footer .footer {
+  padding: 5rem;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.footer-container .container-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 4rem;
+  font-size: 26px;
+  text-transform: capitalize;
+}
+.footer-container .container-flex div {
+  width: 100%;
+}
+.footer-container .container-flex .title {
+  font-size: 28px;
+  font-weight: bold;
+}
+.footer-container .container-flex .logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  line-height: normal;
+}
+.footer-container .container-flex .logo img {
+  width: 109px;
+  height: 109px;
+}
+.footer-container .container-flex .logo .title {
+  font-size: 34px;
+  font-weight: bold;
+}
+.footer-container .container-flex .logo .subtitle {
+  font-size: 17px;
+}
+
+@media screen and (max-width: 768px) {
+  .container-flex {
+    text-align: center;
+  }
+}/*# sourceMappingURL=Footer.css.map */

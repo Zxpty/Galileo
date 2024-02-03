@@ -2,6 +2,7 @@ import './navbar.css'
 import LogoGali from '../../assets/Images/logo-gali.png'
 import MenuResponsive from '../MenuResponsive'
 import { useScrollPage } from '../../hooks/useScrollPage'
+import { Link } from 'react-router-dom'
 
 
 function NavBar() {
@@ -11,7 +12,7 @@ function NavBar() {
     return (
         <header className={`header ${backClass}`}>
             <div className="menu-logo">
-                <img src={LogoGali} alt="logo-gali" />
+                <Link to="/"><img src={LogoGali} alt="logo-gali" /></Link>
                 <div>
                     <div className="logo-subtitle">Institución educativa Privada</div>
                     <div className="logo-title">Galileo Huacho</div>
@@ -19,9 +20,9 @@ function NavBar() {
             </div>
             <nav>
                 <ul className="nav-links">
-                    <li><a href="/Pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="">Nivel Educativo</a></li>
-                    <li><a href="">Aula Virtual</a></li>
+                    <li><Link to="/nosotros">Nosotros</Link></li>
+                    <li><Link to="/niveles-educativos">Nivel Educativo</Link></li>
+                    <li><Link to="/aula-virtual">Aula Virtual</Link></li>
                 </ul>
             </nav>
             <MenuResponsive />
