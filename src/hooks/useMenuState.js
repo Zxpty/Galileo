@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react"
 
 export function useMenuState() {
@@ -8,7 +9,6 @@ export function useMenuState() {
     useEffect(() => {
         const { mobileMenuWidth, bodyOverFlowY } = menuState
         document.body.style.overflowY = bodyOverFlowY ? 'hidden' : 'auto'
-        // limpiamos el efecto
         return () => {
             document.body.style.overflowY = 'auto'
         }
