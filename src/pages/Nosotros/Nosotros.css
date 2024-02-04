@@ -1,0 +1,50 @@
+.section-historia {
+  max-width: 100vw;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.section-historia .historia-image {
+  width: 100%;
+  flex: 1;
+  text-align: center;
+}
+.section-historia .historia-content {
+  width: 100%;
+  flex: 1;
+  font-size: 28px;
+  text-wrap: pretty;
+}
+
+.section-vision-mision {
+  background-color: #17293D;
+  max-width: 564px;
+  height: 564px;
+  max-width: 100vw;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.section-vision-mision .mision,
+.section-vision-mision .vision {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  max-height: 100%;
+}
+
+.mision div, .vision div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 439px;
+  max-width: 516px;
+  width: 516px;
+  height: 439px;
+  border-radius: 1rem;
+  background-color: #FEF7F5;
+}/*# sourceMappingURL=Nosotros.css.map */
