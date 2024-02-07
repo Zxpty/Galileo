@@ -1,3 +1,8 @@
+.header-container {
+  max-height: 174px;
+  height: 174px;
+}
+
 .section-historia {
   max-width: 100vw;
   display: flex;
@@ -18,7 +23,7 @@
 }
 
 .section-vision-mision {
-  background-color: #17293D;
+  background-color: #17293d;
   max-width: 564px;
   height: 564px;
   max-width: 100vw;
@@ -36,7 +41,8 @@
   max-height: 100%;
 }
 
-.mision div, .vision div {
+.mision div,
+.vision div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,5 +52,5 @@
   width: 516px;
   height: 439px;
   border-radius: 1rem;
-  background-color: #FEF7F5;
+  background-color: #fef7f5;
 }/*# sourceMappingURL=Nosotros.css.map */

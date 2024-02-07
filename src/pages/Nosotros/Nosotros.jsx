@@ -2,10 +2,15 @@
 import TitleSpace from '../../Components/TitleSpace/TitleSpace';
 import '../../index.css';
 import './Nosotros.css'
+import BackImage from '../../assets/Images/Background/background4.png'
 
 export default function Nosotros() {
     return (
         <>
+            <section id='hero' style={{ backgroundImage: `url(${BackImage})` }}>
+                <div className="header-container">
+                </div>
+            </section>
             <TitleSpace
                 firstTitle="Conoce"
                 secondTitle="Nuestra Historia"
@@ -31,14 +36,14 @@ export default function Nosotros() {
             <div className='section-vision-mision'>
                 <div className='mision'>
                     <div>
-                    <img src="./src/assets/images/MISION.png" alt="" />
-                    <h1>MISIÓN</h1>
+                        <img src="./src/assets/images/MISION.png" alt="" />
+                        <h1>MISIÓN</h1>
                     </div>
                 </div>
                 <div className='vision'>
                     <div>
-                    <img src="./src/assets/images/VISION1.png" alt="" />
-                    <h1>VISIÓN</h1>
+                        <img src="./src/assets/images/VISION1.png" alt="" />
+                        <h1>VISIÓN</h1>
                     </div>
                 </div>
             </div>

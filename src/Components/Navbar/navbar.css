@@ -123,7 +123,6 @@ header .overlay .close {
 }
 /*End of media query Nav*/
 #hero {
-  background: url("/Images/Background/background1.png");
   background-size: cover;
   background-position: top center;
   position: relative;
