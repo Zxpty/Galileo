@@ -55,3 +55,41 @@
         background-color: #fef7f5;
     }
 }
+
+// logos = galeria-images and images-slide = logos-slide
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.images-slide {
+    display: inline-block;
+    animation: 90s slide infinite linear;
+    img {
+        margin: 0 1.3rem;
+    }
+}
+
+.galeria-images {
+    overflow: hidden;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+}
+.galeria-images:before,
+.galeria-images:after {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+
+.gallery-section{
+    padding: 1rem;
+}

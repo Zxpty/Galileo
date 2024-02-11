@@ -1,10 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
-import TitleSpace from '../../Components/TitleSpace/TitleSpace';
+import TitleSpace from '../../Components/TitleSpace/TitleSpace.jsx';
 import '../../index.css';
 import './Nosotros.css'
 import BackImage from '../../assets/Images/Background/background4.png'
+import slidesJS from '../../utils/slides';
+import { useEffect } from 'react';
+import { PrimaryButton } from '../../Components/buttons/PrimaryButton/PrimaryButton.jsx';
 
 export default function Nosotros() {
+    useEffect(() => {
+        slidesJS()
+    }, [])
     return (
         <>
             <section id='hero' style={{ backgroundImage: `url(${BackImage})` }}>
@@ -54,6 +60,29 @@ export default function Nosotros() {
             <TitleSpace
                 secondTitle="Galeria"
             />
+            <section className='gallery-section'>
+                <div className='galeria-images'>
+                    <div className='images-slide'>
+                        <img src="./src/assets/images/slide-images-1/5.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/6.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/7.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/8.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/9.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/10.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/11.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/12.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/13.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/14.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/15.png" alt="" />
+                        <img src="./src/assets/images/slide-images-1/16.png" alt="" />
+                    </div>
+                </div>
+                <PrimaryButton />
+            </section>
+
+
+
+
         </>
     );
 }
